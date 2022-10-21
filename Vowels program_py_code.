@@ -1,0 +1,13 @@
+#to check whether vowels are present or not
+str1=input("Enter the string:")
+list1=[]
+a=0
+vow=['a','e','i','o','u']
+while a<len(str1):
+     for i in vow:
+          if str1[a]==i:
+               list1.append(str1[a])
+     a+=1
+#Converting list to set
+list1=set(list1)
+print("The following vowels are there in the string:",list1)
